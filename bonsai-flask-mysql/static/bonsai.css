@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hanalei&display=swap");
+
+@font-face {
+  src: url('fonts/MavenPro-Medium.ttf');
+  font-family: "Maven Pro";
+}
+body {
+  font-family: "Roboto",sans-serif;
+  font-weight: bolder;
+  background-color: whitesmoke;
+}
+body .container-top {
+  height: auto;
+  min-height: 105vh;
+  background-image: url('../static/img/Page-Turner.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*border-radius: 0px 20% 0px 10%;*/
+
+  
+}
+body .navbar{
+  font-family: "Maven Pro";
+}
+body .container-top .navbar-toggler {
+  background-color: rgba(146, 190, 65, 0.795);
+  box-shadow: 2px 2px 4px darkgreen;
+}
+body .container-top .logo-cont {
+  padding: 0;
+  font-family: "Maven Pro";
+  font-size: 1.2em;
+}
+body .container-top nav{
+  font-size: 1.3em;
+}
+body .container-top .nav-link:hover {
+  text-decoration: underline;
+  background: rgba(171, 223, 88, 0.479);
+}
+body .container-top .card-title{
+  font-family: "Maven Pro";
+  font-weight: bolder;
+}
+body .container-top .card1 {
+  background-color: rgba(238, 243, 162, 0.699);
+}
+body .container-top .card2 {
+  background-color: rgba(248, 252, 196, 0.897);
+}
+body .container-bottom {
+  
+  background-color: rgba(211, 255, 199, 0.836);
+  padding: 0;
+  height: auto;
+  min-height: 15vh;
+  
+}
+body .container-bottom .slider-main {
+  width: 100%;
+  height: auto;
+  min-height: 200px;
+  
+}
+body .container-bottom .slider-main .carousel-cell {
+  width: 66%;
+  min-height: 100%;
+  margin-right: 10px;
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+}
+body .container-bottom .slider-main img {
+  box-shadow: rgb(70, 73, 65) 3px 3px 5px;
+  width: 98%;
+  max-height: 88%;
+  border-radius: 5px;
+}
+.jumb{
+  background-image: url('../static/img/Liquid-Cheese.svg');
+  /*border-radius: 0 20% 0 0;*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 0;
+}
+.foot{
+  background-color: transparent;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*# sourceMappingURL=bonsai.css.map */

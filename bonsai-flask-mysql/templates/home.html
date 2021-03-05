@@ -1,0 +1,71 @@
+{%extends "layout.html"%}
+{% block content_top %}
+    <div class="row">
+        <div class="col-md-6 text-center p-4 mx-auto">
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category,message in messages%}
+                        <div class="alert alert-{{category}}">
+                            {{message}}
+                        </div>
+                    {% endfor %}
+                {% endif %}    
+            {% endwith %}            
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="jumbotron jumbotron-fluid bg-transparent">
+                <div class="container">
+                  <h1 class="display-4">Discover what we can do! </h1>
+                  <p class="lead">Check out our new products and designs for Bonsai</p>
+                  <button class="btn btn-lg btn-light">Discover!</button>
+                </div>
+              </div>        
+        </div>
+    </div>
+    <div class="row ">
+            <div class="col-md-3 mx-auto mb-2">
+                <div class="card card1">
+                    <div class="card-body">
+                        <h5 class="card-title">Special bonsai design</h5>
+                        <p class="card-text">We've been working with the best bonsai designers for more than 10 years.</p>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mx-auto mb-2 ">
+                <div class="card card1">
+                    <div class="card-body">
+                        <h5 class="card-title">Personalize yours</h5>
+                        <p class="card-text">You will get the best product support for improving and caring of your trees.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mx-auto mb-5">
+                <div class="card card2">
+                      <div class="card-body">
+                          <h5 class="card-title">Huge catalogue</h5>
+                          <p class="card-text">We've got the bonsai of your dreams just take a look to our catalogue!</p>
+                          <a href="#" class="btn btn-success">Check it!</a>
+                      </div>
+                  </div>
+            </div>
+    </div>
+
+    
+{% endblock content_top%}
+{% block content_bot %}
+    <div class="container-fluid d-flex p-0 mt-0-sm mb-0-sm ">
+        <div class="carousel slider-main "  data-flickity='{ "wrapAround": true, "prevNextButtons": false,
+        "pageDots": false}'>
+            <div class="carousel-cell slider-item"><img src="../static/img/bons1.jpg" alt=""></div>
+            <div class="carousel-cell slider-item"><img src="../static/img/bons2.jpg" alt=""></div>
+            <div class="carousel-cell slider-item"><img src="../static/img/bons3.jpg" alt=""></div>
+            <div class="carousel-cell slider-item"><img src="../static/img/bons4.jpg" alt=""></div>
+            <div class="carousel-cell slider-item"><img src="../static/img/bons5.jpg" alt=""></div>
+        </div>
+    </div>
+{% endblock content_bot %}
